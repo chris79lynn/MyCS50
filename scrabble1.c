@@ -8,6 +8,7 @@ int POINTS[] = {1, 3, 3, 2, 1, 4, 2, 4, 1, 8, 5, 1, 3, 1, 1, 3, 10, 1, 1, 1, 1, 
 
 //Prototype of custom function
 int compute_score(string word);
+int set_points(char transition);
 
 int main(void)
 {
@@ -55,18 +56,32 @@ int compute_score(string word)
             if (isalpha(WORDC[0][j])) // or... isalpha(char_store)
             {
                 char_store = WORDC[0][j];
+                sum = sum + set_points(char_store);
                 //or a function to set points to char_store
             }
-            if (char_store == 'a')
-            {
-                sum = sum + POINTS[0];
+
+
+            //if (char_store == 'a' || char_store == 'A')
+            //{
+              //  sum = sum + POINTS[0];
                 //do
                 //{
                 //    sum = sum + POINTS[0];
                 //}
                 //while (islower(char_store) || isupper(char_store));
-            }
+            // }
         }return sum;
+}
+
+int set_points(char transition)
+{
+      int final_sum = 0;
+
+      if (transition == 'a' || transition == 'A')
+      {
+        final_sum = final_sum + POINTS[0];
+      }
+      return final_sum;
 }
 
 /*  for (int j = 0; j < n; j++)
