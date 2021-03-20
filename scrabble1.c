@@ -45,11 +45,41 @@ int compute_score(string word)
     int sum = 0;
     int check_letter = 0;
     //Iterates through string legnth
-    for (int j = 0; j < n; j++)
+    char char_store;
+     //iterate through string; store [0][j] in a variable
+    //add the variable to a sum variable += until done iterating through
+
+
+        for (int j = 0; j < n; j++)
+        {
+            if (isalpha(WORDC[0][j])) // or... isalpha(char_store)
+            {
+                char_store = WORDC[0][j];
+                //or a function to set points to char_store
+            }
+            if (char_store == 'a')
+            {
+                sum = sum + POINTS[0];
+                //do
+                //{
+                //    sum = sum + POINTS[0];
+                //}
+                //while (islower(char_store) || isupper(char_store));
+            }
+        }return sum;
+}
+
+/*  for (int j = 0; j < n; j++)
     {
+
        // GOOD ---> printf("%i", WORDC[0][j]);
         //if numbers are between 65 and 90 or 97 and 122, then run this function
-        if (WORDC[0][j] == 'a' || WORDC[0][j] == 'A')
+
+        //iterate through string; store [0][j] in a variable
+        //add the variable to a sum variable += until done iterating through
+
+
+          if (WORDC[0][j] == 'a' || WORDC[0][j] == 'A')
         {
             WORDC[0][j] = POINTS[0];
             check_letter++;
@@ -181,14 +211,15 @@ int compute_score(string word)
             check_letter++;
         }
         //if (check_letter != 1) //WORDC[0][j] = 0;
-       /* if ((int) WORDC[0][j] < 65 || (int) WORDC[0][j] > 122)
+       if ((int) WORDC[0][j] < 65 || (int) WORDC[0][j] > 122)
         {
              WORDC[0][j] = POINTS[26];
              //WORDC[0][j] = 0;
-        }*/
+        }
 
     sum = sum + WORDC[0][j];
     }
     return sum;
-}
+*/
+
 
