@@ -75,103 +75,103 @@ int set_points(char transition)
       }
       if (transition == 'b' || transition == 'B')
       {
-        final_sum = final_sum + POINTS[0];
+        final_sum = final_sum + POINTS[1];
       }
       if (transition == 'c' || transition == 'C')
       {
-        final_sum = final_sum + POINTS[0];
+        final_sum = final_sum + POINTS[2];
       }
       if (transition == 'd' || transition == 'D')
       {
-        final_sum = final_sum + POINTS[0];
+        final_sum = final_sum + POINTS[3];
       }
       if (transition == 'e' || transition == 'E')
       {
-        final_sum = final_sum + POINTS[0];
+        final_sum = final_sum + POINTS[4];
       }
       if (transition == 'f' || transition == 'F')
       {
-        final_sum = final_sum + POINTS[0];
+        final_sum = final_sum + POINTS[5];
       }
       if (transition == 'g' || transition == 'G')
       {
-        final_sum = final_sum + POINTS[0];
+        final_sum = final_sum + POINTS[6];
       }
       if (transition == 'h' || transition == 'H')
       {
-        final_sum = final_sum + POINTS[0];
+        final_sum = final_sum + POINTS[7];
       }
       if (transition == 'i' || transition == 'I')
       {
-        final_sum = final_sum + POINTS[0];
+        final_sum = final_sum + POINTS[8];
       }
       if (transition == 'j' || transition == 'J')
       {
-        final_sum = final_sum + POINTS[0];
+        final_sum = final_sum + POINTS[9];
       }
       if (transition == 'k' || transition == 'K')
       {
-        final_sum = final_sum + POINTS[0];
+        final_sum = final_sum + POINTS[10];
       }
       if (transition == 'l' || transition == 'L')
       {
-        final_sum = final_sum + POINTS[0];
+        final_sum = final_sum + POINTS[11];
       }
       if (transition == 'm' || transition == 'M')
       {
-        final_sum = final_sum + POINTS[0];
+        final_sum = final_sum + POINTS[12];
       }
       if (transition == 'n' || transition == 'N')
       {
-        final_sum = final_sum + POINTS[0];
+        final_sum = final_sum + POINTS[13];
       }
       if (transition == 'o' || transition == 'O')
       {
-        final_sum = final_sum + POINTS[0];
+        final_sum = final_sum + POINTS[14];
       }
       if (transition == 'p' || transition == 'P')
       {
-        final_sum = final_sum + POINTS[0];
+        final_sum = final_sum + POINTS[15];
       }
       if (transition == 'q' || transition == 'Q')
       {
-        final_sum = final_sum + POINTS[0];
+        final_sum = final_sum + POINTS[16];
       }
       if (transition == 'r' || transition == 'R')
       {
-        final_sum = final_sum + POINTS[0];
+        final_sum = final_sum + POINTS[17];
       }
       if (transition == 's' || transition == 'S')
       {
-        final_sum = final_sum + POINTS[0];
+        final_sum = final_sum + POINTS[18];
       }
       if (transition == 't' || transition == 'T')
       {
-        final_sum = final_sum + POINTS[0];
+        final_sum = final_sum + POINTS[19];
       }
       if (transition == 'u' || transition == 'U')
       {
-        final_sum = final_sum + POINTS[0];
+        final_sum = final_sum + POINTS[20];
       }
       if (transition == 'v' || transition == 'V')
       {
-        final_sum = final_sum + POINTS[0];
+        final_sum = final_sum + POINTS[21];
       }
       if (transition == 'w' || transition == 'W')
       {
-        final_sum = final_sum + POINTS[0];
+        final_sum = final_sum + POINTS[22];
       }
       if (transition == 'x' || transition == 'X')
       {
-        final_sum = final_sum + POINTS[0];
+        final_sum = final_sum + POINTS[23];
       }
       if (transition == 'y' || transition == 'Y')
       {
-        final_sum = final_sum + POINTS[0];
+        final_sum = final_sum + POINTS[24];
       }
       if (transition == 'z' || transition == 'Z')
       {
-        final_sum = final_sum + POINTS[0];
+        final_sum = final_sum + POINTS[25];
       }
       return final_sum;
 }
