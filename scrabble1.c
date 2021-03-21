@@ -47,37 +47,129 @@ int compute_score(string word)
     int check_letter = 0;
     //Iterates through string legnth
     char char_store;
-     //iterate through string; store [0][j] in a variable
+
     //add the variable to a sum variable += until done iterating through
 
-
+        //iterates through string & stores each character char_store
         for (int j = 0; j < n; j++)
         {
-            if (isalpha(WORDC[0][j])) // or... isalpha(char_store)
+            //Continues loop only for alphabetic characters)
+            if (isalpha(WORDC[0][j]))
             {
                 char_store = WORDC[0][j];
+                //Function call to associate char_store to value within POINTS[]
                 sum = sum + set_points(char_store);
-                //or a function to set points to char_store
             }
 
-
-            //if (char_store == 'a' || char_store == 'A')
-            //{
-              //  sum = sum + POINTS[0];
-                //do
-                //{
-                //    sum = sum + POINTS[0];
-                //}
-                //while (islower(char_store) || isupper(char_store));
-            // }
         }return sum;
 }
 
+//Function to associate each character to a value in POINTS[]
 int set_points(char transition)
 {
       int final_sum = 0;
 
       if (transition == 'a' || transition == 'A')
+      {
+        final_sum = final_sum + POINTS[0];
+      }
+      if (transition == 'b' || transition == 'B')
+      {
+        final_sum = final_sum + POINTS[0];
+      }
+      if (transition == 'c' || transition == 'C')
+      {
+        final_sum = final_sum + POINTS[0];
+      }
+      if (transition == 'd' || transition == 'D')
+      {
+        final_sum = final_sum + POINTS[0];
+      }
+      if (transition == 'e' || transition == 'E')
+      {
+        final_sum = final_sum + POINTS[0];
+      }
+      if (transition == 'f' || transition == 'F')
+      {
+        final_sum = final_sum + POINTS[0];
+      }
+      if (transition == 'g' || transition == 'G')
+      {
+        final_sum = final_sum + POINTS[0];
+      }
+      if (transition == 'h' || transition == 'H')
+      {
+        final_sum = final_sum + POINTS[0];
+      }
+      if (transition == 'i' || transition == 'I')
+      {
+        final_sum = final_sum + POINTS[0];
+      }
+      if (transition == 'j' || transition == 'J')
+      {
+        final_sum = final_sum + POINTS[0];
+      }
+      if (transition == 'k' || transition == 'K')
+      {
+        final_sum = final_sum + POINTS[0];
+      }
+      if (transition == 'l' || transition == 'L')
+      {
+        final_sum = final_sum + POINTS[0];
+      }
+      if (transition == 'm' || transition == 'M')
+      {
+        final_sum = final_sum + POINTS[0];
+      }
+      if (transition == 'n' || transition == 'N')
+      {
+        final_sum = final_sum + POINTS[0];
+      }
+      if (transition == 'o' || transition == 'O')
+      {
+        final_sum = final_sum + POINTS[0];
+      }
+      if (transition == 'p' || transition == 'P')
+      {
+        final_sum = final_sum + POINTS[0];
+      }
+      if (transition == 'q' || transition == 'Q')
+      {
+        final_sum = final_sum + POINTS[0];
+      }
+      if (transition == 'r' || transition == 'R')
+      {
+        final_sum = final_sum + POINTS[0];
+      }
+      if (transition == 's' || transition == 'S')
+      {
+        final_sum = final_sum + POINTS[0];
+      }
+      if (transition == 't' || transition == 'T')
+      {
+        final_sum = final_sum + POINTS[0];
+      }
+      if (transition == 'u' || transition == 'U')
+      {
+        final_sum = final_sum + POINTS[0];
+      }
+      if (transition == 'v' || transition == 'V')
+      {
+        final_sum = final_sum + POINTS[0];
+      }
+      if (transition == 'w' || transition == 'W')
+      {
+        final_sum = final_sum + POINTS[0];
+      }
+      if (transition == 'x' || transition == 'X')
+      {
+        final_sum = final_sum + POINTS[0];
+      }
+      if (transition == 'y' || transition == 'Y')
+      {
+        final_sum = final_sum + POINTS[0];
+      }
+      if (transition == 'z' || transition == 'Z')
       {
         final_sum = final_sum + POINTS[0];
       }
