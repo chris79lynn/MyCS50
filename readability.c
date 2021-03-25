@@ -3,18 +3,29 @@
 #include <string.h>
 #include <ctype.h>
 
-int main (int argc, string argv[])
-{
-    string user_text = get_string("Text:\n ");
+int letter_count(string input);
 
-    if (int i=0, n=strlen(user_text); i<n; i++)
+int main (void)
+{
+    string get_letters =  get_string("Text:\n ");
+    int alphabetic  = letter_count(get_letters);
+
+    printf("%i", alphabetic);
+}
+
+int letter_count (string input)
+{
+
+    int n = strlen(input);
+    int i = 0;
+
+
+    while (input [i] !='\0')
     {
-        if (isalpha(user_text[i]))
-        {
-            printf("%i \n", i);
-        }
+       i++;
     }
+    return i;
+}
 
     //Before Grade 1
-    //16+
-}
+    //16++
