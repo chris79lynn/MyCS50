@@ -3,23 +3,39 @@
 #include <string.h>
 #include <ctype.h>
 
-int letter_count(string input);
+int letter_count(void);
 
 int main (void)
 {
-    string get_letters =  get_string("Text:");
-    int alphabetic  = letter_count(get_letters);
+    // string get_letters =  get_string("Text:");
+    int alphabetic  = letter_count();
 
     printf("%i", alphabetic);
 }
 
-int letter_count (string input)
+int letter_count (void)
 {
+    string input =  get_string("Text:");
+
     int letters = 0;
-    for (int i = 0; input[i] != '\0'; i++)
+    int spaces = 0;
+    int length = strlen(input);
+
+    printf("Original # of letters: %i", length);
+
+    for (int i = 0; i < length; i++)
     {
-       printf("%c", input[i]);
-       letters = i;
+        if (input[i] != '\0' && input[i] != ' ')
+        {
+            i++;
+        }
+        else if (input[i] == '\0')
+        {
+            spaces++;
+        }
+
+        printf("%c", input[i]);
+        letters = i-1;
     }
     return letters;
 }
