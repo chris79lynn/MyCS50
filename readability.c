@@ -7,7 +7,7 @@ int letter_count(string input);
 
 int main (void)
 {
-    string get_letters =  get_string("Text:\n ");
+    string get_letters =  get_string("Text:");
     int alphabetic  = letter_count(get_letters);
 
     printf("%i", alphabetic);
@@ -15,16 +15,13 @@ int main (void)
 
 int letter_count (string input)
 {
-
-    int n = strlen(input);
-    int i = 0;
-
-
-    while (input [i] !='\0')
+    int letters = 0;
+    for (int i = 0; input[i] != '\0'; i++)
     {
-       i++;
+       printf("%c", input[i]);
+       letters = i;
     }
-    return i;
+    return letters;
 }
 
     //Before Grade 1
