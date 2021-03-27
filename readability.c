@@ -24,7 +24,7 @@ int letter_count (void)
     int letters = 0;
     for (int i = 0; i < length; i++)
     {
-      if (input [i] != 32)
+      if (input [i] != 32 && isalpha(input[i]))
       {
           letters++;
       }
