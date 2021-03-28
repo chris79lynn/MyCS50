@@ -5,6 +5,7 @@
 
 int letter_count(int length, string letter_string);
 int word_count(int length, string word_string);
+int sentence_count (int length, string sentence_string);
 
 int main (void)
 {
@@ -17,7 +18,10 @@ int main (void)
     printf("%i\n", num_letters);
 
     int num_words = word_count(counter, alphabetic);
-    printf("%i", num_words);
+    printf("%i\n", num_words);
+
+    int num_sentences = sentence_count(counter, alphabetic);
+    printf("%i", num_sentences);
 }
 
 int letter_count (int length, string letter_string)
@@ -31,8 +35,7 @@ int letter_count (int length, string letter_string)
       {
           letters++;
       }
-    }
-    return letters;
+    } return letters;
 }
 
 int word_count(int length, string word_string)
@@ -46,8 +49,20 @@ int word_count(int length, string word_string)
       {
           words++;
       }
-    }
-    return words+1;
+    } return words+1;
+}
+
+int sentence_count (int length, string sentence_string)
+{
+    length = strlen(sentence_string);
+    int sentences = 0;
+    for (int i = 0; i < length; i++)
+    {
+        if (sentence_string[i] == '!' || sentence_string[i] ==  '.' || sentence_string[i] == '?')
+        {
+            sentences++;
+        }
+    } return sentences;
 }
 
     //Before Grade 1
