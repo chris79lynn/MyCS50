@@ -2,10 +2,12 @@
 #include <cs50.h>
 #include <string.h>
 #include <ctype.h>
+#include <math.h>
 
 int letter_count(int length, string letter_string);
 int word_count(int length, string word_string);
 int sentence_count (int length, string sentence_string);
+float grade_calc (int letters, int sentences, int words);
 
 int main (void)
 {
@@ -21,7 +23,10 @@ int main (void)
     printf("%i\n", num_words);
 
     int num_sentences = sentence_count(counter, alphabetic);
-    printf("%i", num_sentences);
+    printf("%i\n", num_sentences);
+
+    float grade = grade_calc(num_letters, num_sentences, num_words);
+    printf("%f", grade);
 }
 
 int letter_count (int length, string letter_string)
@@ -64,6 +69,20 @@ int sentence_count (int length, string sentence_string)
         }
     } return sentences;
 }
+
+float grade_calc (int letters, int sentences, int words)
+{
+    float l_per_w = ((float)letters / (float)words) * 100.00;
+    float s_per_w = ((float)sentences / (float)words) * 100.00;
+
+    float index = 0.0588 * l_per_w - 0.296 * s_per_w - 15.8;
+
+    return round(index);
+}
+
+//(letters / words) * 100 = L
+//(sentences / words * 100) = S
+// float index = 0.0588 * L - 0.296 * S - 15.8
 
     //Before Grade 1
     //16++
