@@ -26,7 +26,20 @@ int main (void)
     printf("%i\n", num_sentences);
 
     float grade = grade_calc(num_letters, num_sentences, num_words);
-    printf("%f", grade);
+
+    if (grade >= 1 && grade < 16)
+    {
+        printf("Grade %d", (int)grade);
+    }
+    if (grade < 1)
+    {
+        printf("Before Grade 1");
+    }
+    if (grade >= 16)
+    {
+        printf("Grade 16+");
+    }
+
 }
 
 int letter_count (int length, string letter_string)
@@ -80,9 +93,6 @@ float grade_calc (int letters, int sentences, int words)
     return round(index);
 }
 
-//(letters / words) * 100 = L
-//(sentences / words * 100) = S
-// float index = 0.0588 * L - 0.296 * S - 15.8
-
+    //ADD:
     //Before Grade 1
     //16++
